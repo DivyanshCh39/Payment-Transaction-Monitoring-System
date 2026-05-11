@@ -68,7 +68,7 @@ Cross-cutting: JWT Auth, Spring Security RBAC, Audit Logging
 Core entities typically include:
 
 - `users` — identity and account status
-- `roles` / `user_roles` — RBAC mapping
+- `roles` and `user_roles` — RBAC mapping (many-to-many join)
 - `transactions` — payment payload, status, amount, timestamps
 - `fraud_alerts` — risk score, reason codes, alert status
 - `audit_logs` — actor, action, target, timestamp, outcome
@@ -130,7 +130,7 @@ docker run -d \
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/DivyanshCh39/Payment-Transaction-Monitoring-System.git
+   git clone <repository-url>
    cd Payment-Transaction-Monitoring-System
    ```
 
